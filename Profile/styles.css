@@ -1,0 +1,272 @@
+
+body {
+    background-color: #e0f7fa;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; 
+  }
+
+  .bubble-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #c2cecf; 
+    box-shadow: 0px 4px 8px rgba(179, 154, 154, 0.2);
+    z-index: 1000;
+  }
+  
+  .bubble-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .bubble-nav ul li {
+    margin: 10px;
+  }
+  
+  .bubble-nav a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+  }
+  
+  .bubble-nav a:hover {
+    background-color: #a0d3e6; 
+  }
+  
+ 
+  .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    margin-top: 60px; 
+  }
+  
+  .text-content {
+    max-width: 600px;
+    color: #00796b; 
+  }
+  
+  .text-content h2 {
+    font-size: 3em;
+    margin-bottom: 0;
+  }
+  
+  .text-content h6 {
+    font-size: 1.5em;
+    color: #004d40; 
+  }
+  
+  .center-image {
+    margin-top: 20px;
+  }
+  
+  .center-image img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .bubble-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  
+  .floating-bubble {
+    position: absolute;
+    background-color: #00796b;
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: float 6s infinite;
+  }
+  
+  .floating-bubble:nth-child(1) {
+    width: 50px;
+    height: 50px;
+    left: 10%;
+    animation-duration: 8s;
+  }
+  
+  .floating-bubble:nth-child(2) {
+    width: 70px;
+    height: 70px;
+    left: 30%;
+    animation-duration: 10s;
+  }
+  
+  .floating-bubble:nth-child(3) {
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    animation-duration: 12s;
+  }
+  
+  .floating-bubble:nth-child(4) {
+    width: 80px;
+    height: 80px;
+    left: 70%;
+    animation-duration: 14s;
+  }
+  
+  .floating-bubble:nth-child(5) {
+    width: 40px;
+    height: 40px;
+    left: 90%;
+    animation-duration: 16s;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100vh);
+    }
+  }
+  
+  .about-me-content {
+    padding: 60px;
+    background-color: #b2dfdb; 
+  }
+  
+  .about-me-content h2 {
+    text-align: center;
+  }
+  
+  .career-objective, .details {
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  .skills-content {
+    padding: 60px;
+    background-color: #a5d6a7; /
+  }
+  
+  .skills-content h1 {
+    text-align: center;
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .skill-bubble {
+    background-color: #004d40; 
+    color: #fff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .skill-bubble:hover {
+    background-color: #00796b; 
+  }
+  
+  .skill-bubble i {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .achievements-page {
+    padding: 60px;
+    background-color: #fff3e0; 
+  }
+  
+  .quiz-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .quiz-section h2 {
+    margin-bottom: 20px;
+  }
+  
+  .quiz-section .options button {
+    background-color: #00796b; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .quiz-section .options button:hover {
+    background-color: #004d40; 
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .contact-content {
+    padding: 60px;
+    background-color: #fff3e0; /
+  }
+  
+  .contact-content h1 {
+    text-align: center;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .contact-item {
+    background-color: #00796b; 
+    color: #fff;
+    border-radius: 10px;
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-item i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .contact-item span {
+    font-size: 16px;
+  }
+  
+  .contact-item a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .contact-item a:hover {
+    text-decoration: underline;
+  }
+  
